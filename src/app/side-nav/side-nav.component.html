@@ -1,0 +1,37 @@
+<div class="sideNavContainer" fxLayout="column" fxLayoutAlign="start center">
+    <img src="https://www.maventra.com/wp-content/themes/simple-bootstrap/images/logo.png" >
+    <br>
+    <div class="sideNavWidth" fxLayout="column" fxLayoutGap="1rem" >
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem" [ngClass]="{'active':isActive} " (click)="handleClick()">
+            <mat-icon>dashboard_open</mat-icon>
+            <h4>Dashboard</h4>
+        </div>
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem"   >
+            <mat-icon>folder_open</mat-icon>
+            <h4>Classes</h4>
+        </div>
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem"   >
+            <mat-icon>library_books</mat-icon>
+            <h4>Resources</h4>
+        </div>
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem"   >
+            <mat-icon>calendar_today</mat-icon>
+            <h4>Learning plan</h4>
+        </div>
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem"   >
+            <mat-icon matBadge="4" matBadgeColor="warn" matBadgeSize="small"> chat_bubble_outline</mat-icon>
+            <h4>Chat</h4>
+        </div>
+        <div class="content" fxLayout="row" fxLayoutGap="1.5rem"   >
+            <mat-icon>settings</mat-icon>
+            <h4>Settings</h4>
+        </div>
+        
+    </div>
+    <div class="navBottomContent" fxLayout="column" fxLayoutAlign="center center">
+        <img src="./../.././assets/icon.png">
+        <h5>Upgrade to <strong>PRO</strong> for more resources.</h5>
+        <button mat-raised-button color="primary">Upgrade</button>
+    </div>
+    
+</div>

@@ -1,0 +1,101 @@
+
+<div fxLayout="row">
+    <app-side-nav></app-side-nav>
+    <div class="container" fxLayout="column" fxLayoutGap="1.5rem" fxFlex="100">
+        <div class="topHeading" fxLayout="row" fxLayoutAlign="space-between">
+            <h2>Dashboard</h2>
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
+                <h4>20 Sep 2019, Friday</h4>
+                <mat-icon>search</mat-icon>
+            </div>
+        </div>
+        <div class="welcome" fxLayout="row" fxLayoutGap="20%">
+            <div>
+                <h1>Welcome back {{myData.fullName}}!</h1>
+                <p>You've learned 80% of your goal this week!<br>
+                    Keep it up and improve your results!
+                </p>
+            </div>
+            <div>
+                <img src="./../../assets/image-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1.25rem">
+            <div class="cards" fxFlex="50%" >
+                <div style="margin-bottom: 1rem;" fxLayout="row" fxLayoutAlign="space-between" >
+                    <h2>Latest Results</h2>
+                <div fxLayoutAlign="center center" fxLayoutGap="0.5rem"><p>More</p><mat-icon>arrow_right_alt</mat-icon></div>
+                </div>
+                
+                <div  *ngFor="let data of getData.dashboardData.lastestResults">
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <h3>{{this.data.quizTitle}}</h3>
+                        <!-- <progress value="{{this.data.score}}" max="100"></progress> -->
+                        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
+                            <div class="progressBar">
+                                <div class="innerBar" [ngClass]="{'id1': data.quizTitle === 'JavaScript Basics', 'id2': data.quizTitle === 'HTML Fundamentals', 'id3': data.quizTitle === 'CSS Essentials', 'id4': data.quizTitle === 'React Fundamentals'}" [style.width]="this.data.score"></div>
+                                
+                            </div>
+                            <h4 [ngClass]="{'fontid1': data.quizTitle === 'JavaScript Basics', 'fontid2': data.quizTitle === 'HTML Fundamentals', 'fontid3': data.quizTitle === 'CSS Essentials', 'fontid4': data.quizTitle === 'React Fundamentals'}">{{this.data.score}}</h4>
+                        </div>
+                    </div>
+                <mat-divider style="margin: 1rem ;"></mat-divider> 
+                </div>
+            </div>
+            <div class="cards" fxFlex="50%">
+                <div style="margin-bottom: 1rem;" fxLayout="row" fxLayoutAlign="space-between">
+                    <h2>Time spent on learning</h2>
+                    <div fxLayoutAlign="center center" fxLayoutGap="0.5rem"><p>Last week</p> <mat-icon>keyboard_arrow_down</mat-icon></div>              
+                </div>
+                <div >
+                    <!-- <div fxLayout="row">
+                        <h4 *ngFor="let weekDays of weekDays">{{this.weekDays}}</h4>
+                        <h4></h4>
+                    </div> -->
+                    <!-- <div class="verticleProgress">
+                        <div class="vinnerBar" [style.height]="this.data.Vocabulary"></div>
+                        <div class="vinnerBar" [style.height]="this.data.Grammar"></div>
+                        <div class="vinnerBar" [style.height]="this.data.Listening"></div>
+                        <div class="vinnerBar" [style.height]="this.data.Writing"></div>
+                    </div> -->
+                </div>
+                <app-time-spent-chart></app-time-spent-chart>
+            </div>
+        </div>
+        <div class="courses" >
+            <h2>Your courses</h2>
+            <br>
+            <div class="myCourses" fxLayout="row" fxlayoutAlign=space-between fxLayoutGap="2rem">
+                <div id="one" fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                    <div class="box">
+                        <h4>B1</h4>
+                    </div>
+                    <div>
+                        <p>Business English</p>
+                        <h3><strong>Grammar</strong></h3>   
+                    </div>
+                </div>
+                <div id="two" fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                    <div class="box">
+                        <h4>B2</h4>
+                    </div>
+                    <div>
+                        <p>Common English</p>
+                        <h3><strong>Phrasal verbs</strong></h3>   
+                    </div>
+                </div>
+                <div id="three" fxFlex fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                    <div class="box">
+                        <h4>B3</h4>
+                    </div>
+                    <div>
+                        <p>Business Spanish</p>
+                        <h3><strong>Vocabulary</strong></h3>   
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <app-profile></app-profile>
+</div>

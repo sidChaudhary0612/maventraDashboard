@@ -1,0 +1,56 @@
+.userProfile{
+    width: 19rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    
+    h1,h2,h3,h4,h5,p{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 1rem;
+       
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+
+    mat-icon{
+        font-size: 1.25rem;
+    }
+    img{
+        width: 6rem;
+        border-radius: 50%;
+    }
+}
+.innerBar{
+    border-radius: 0.25rem;
+    overflow: hidden;
+    height: 0.34rem;
+    background-color:#5e81f4 ;
+}
+.progressBar{
+    height: 0.35rem;
+    position: relative;
+    width: 7rem;
+    
+    background-color: #e5e9f9;
+    border-radius: 0.25rem;
+}
+.courses{
+
+    h3{
+        padding:0.5rem 0.75rem ;
+        background-color: #e9e9f5;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}
+.reminder mat-icon{
+    color:#ff808b ;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffdde0;
+    text-align: center;
+}

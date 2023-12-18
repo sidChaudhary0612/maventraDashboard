@@ -1,0 +1,128 @@
+{
+    "dashboardData": {
+        "userData": [
+            {
+                "id": 1,
+                "username": "john_doe",
+                "fullName": "John Doe",
+                "email": "mailto:john.doe@example.com",
+                "courses": {
+                    "Maths": "20%",
+                    "Spanish": "70%"
+                },
+                "reminders": [
+                    {
+                        "id": 201,
+                        "title": "English Vocabulary",
+                        "description": "Exam",
+                        "datetime": "2023-12-25T12:00:00"
+                    },
+                    {
+                        "id": 202,
+                        "title": "Spanish Finish Proposal",
+                        "description": "Spanish Exam",
+                        "datetime": "2023-12-24T16:00:00"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "username": "jane_smith",
+                "fullName": "Jane Smith",
+                "email": "mailto:jane.smith@example.com",
+                "courses": {
+                    "Chemistry": "90%",
+                    "Physics": "20%"
+                },
+                "reminders": [
+                    {
+                        "id": 201,
+                        "title": "Chemistry Vocabulary",
+                        "description": "Chemistry Exam",
+                        "datetime": "2023-12-24T11:00:00"
+                    },
+                    {
+                        "id": 202,
+                        "title": "Physics Finish Proposal",
+                        "description": "Physics Exam",
+                        "datetime": "2023-12-24T14:00:00"
+                    }
+                ]
+            }
+        ],
+        "timeSpentData": {
+            "days": {
+                "monday": {
+                    "Vocabulary": 20,
+                    "Grammar": 30,
+                    "Listening": 15,
+                    "Writing": 35
+                },
+                "tuesday": {
+                    "Vocabulary": 25,
+                    "Grammar": 20,
+                    "Listening": 30,
+                    "Writing": 25
+                },
+                "wednesday": {
+                    "Vocabulary": 15,
+                    "Grammar": 35,
+                    "Listening": 25,
+                    "Writing": 25
+                },
+                "thursday": {
+                    "Vocabulary": 92,
+                    "Grammar": 99,
+                    "Listening": 5,
+                    "Writing": 2
+                },
+                "friday": {
+                    "Vocabulary": 18,
+                    "Grammar": 28,
+                    "Listening": 38,
+                    "Writing": 78
+                },
+                "saturday": {
+                    "Vocabulary": 12,
+                    "Grammar": 55,
+                    "Listening": 44,
+                    "Writing": 33
+                },
+                "sunday": {
+                    "Vocabulary": 1,
+                    "Grammar": 2,
+                    "Listening": 52,
+                    "Writing": 58
+                }
+            },
+            "averagePercentages": {
+                "Vocabulary": 20,
+                "Grammar": 28.33,
+                "Listening": 23.33,
+                "Writing": 28.33
+            }
+        },
+        "lastestResults": [
+            {
+                "id": 1,
+                "quizTitle": "JavaScript Basics",
+                "score": "85%"
+            },
+            {
+                "id": 2,
+                "quizTitle": "HTML Fundamentals",
+                "score": "92%"
+            },
+            {
+                "id": 10,
+                "quizTitle": "CSS Essentials",
+                "score": "78%"
+            },
+            {
+                "id": 9,
+                "quizTitle": "React Fundamentals",
+                "score": "88%"
+            }
+        ]
+    }
+}

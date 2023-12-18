@@ -1,0 +1,59 @@
+.sideNavContainer{
+    width: 13rem;
+    height: 100%;
+    
+    background: #fff;
+
+    img{
+        width: 7rem;
+        padding: 1rem;
+    }
+
+    mat-icon{
+        color: rgb(176, 176, 176);
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+}
+.sideNavWidth{
+    width: 100%;
+    padding:0 2rem ;
+}
+.active {
+    
+    
+    mat-icon{
+        color: blue;
+    }
+    h4{
+        color: black;
+        font-weight: 500;
+        
+    }
+    
+  }
+  .content{
+    cursor: pointer;
+    color: grey;
+  }
+
+  .navBottomContent {
+width: 80%;
+position: relative;
+border-radius: 1.5rem;
+background-color: #f5f5fb;
+text-align: center;
+padding: 2rem 0 1rem 0;
+margin: 3rem 0 0 0;
+    img{
+        width: 6rem;
+        position: absolute;
+        top: -4.5rem;
+      }
+      button{
+        background-color: #5e81f4;
+        border-radius: 0.5rem;
+      }
+  }
+  

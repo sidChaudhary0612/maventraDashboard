@@ -1,0 +1,49 @@
+<div class="userProfile" fxLayout="column"  >
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        <h2>Logout</h2>
+        <mat-icon>logout</mat-icon>
+    </div>
+    <br>
+    <div fxLayout="column" fxLayoutAlign="center center" >
+        <img src="./../../assets/profile.png">
+        <h3 >{{this.getData.fullName}}</h3>
+        <h4>Student</h4>
+    </div>
+    <br>
+    <div class="courses">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <h3>B2</h3>
+            <h4><strong>Maths</strong></h4>
+            <div class="progressBar" >
+                <div class="innerBar" [style.width]="this.getData.courses.Maths"></div>    
+            </div>
+        </div>
+        <br>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <h3>C3</h3>
+            <h4><strong>Spanish</strong></h4>
+            <div class="progressBar" >
+                <div class="innerBar" [style.width]="this.getData.courses.Spanish"></div>    
+            </div>
+        </div>
+    </div>
+    <br>
+    <div >
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <h2>Reminders</h2>
+            <mat-icon matBadge="2" matBadgeColor="warn" matBadgeSize="small">notifications_none</mat-icon>
+        </div>
+        <br>
+        <div class="reminder">
+            
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem" *ngFor="let data of getData.reminders">
+                <mat-icon> error_outline</mat-icon>
+                <div>
+                    <h3 style="font-size: 0.9rem;"><strong>{{data.title}}</strong></h3>
+                    <h4>{{data.datetime | date}}</h4>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

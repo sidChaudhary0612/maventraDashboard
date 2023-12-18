@@ -1,0 +1,155 @@
+.container{
+    background-color: #f5f5fb;
+    height: 100%;
+padding: 1.5rem;
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+h1{
+    font-size: 1.25rem;
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 0.9rem;
+}
+h4{
+    font-size: 0.85rem;
+}
+    
+}
+.welcome{
+    background-color: #f7e5e9;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    position: relative;
+
+    h1{
+        color: #ff808b;
+    }
+
+    img{
+        position: absolute;
+        width: 17rem;
+        bottom: 0.75rem;
+       
+    }
+}
+.topHeading{
+
+    mat-icon{
+        color: #6f8ef5;
+        background-color:#e5e9f9 ;
+        /* width: 2rem;
+        height: 2rem; */
+        padding: 0.5rem;
+        border-radius: 0.75rem;
+        
+    }
+
+    h4{
+        color: rgb(164 164 184);
+    }
+    
+}
+.cards{
+padding: 1.5rem;
+background-color: #fff;
+border-radius: 1rem;
+}
+
+
+.courses {
+    .box h4{
+        padding: 1rem;
+        width: min-content;
+        border-radius: 1rem;
+        color: #fff;
+    }
+    #one{
+        background-color:rgb(77 76 172) ;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        h4{
+            background-color: #6866b5;
+        }
+    }
+    #two{
+        background-color:rgb(150 152 214) ;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        h4{
+            background-color: #acaaea;
+        }
+    }
+    #three{
+       background-color:  rgb(255 128 139);
+       padding: 1rem;
+       border-radius: 1rem;
+
+       h4{
+        background-color: rgb(248, 157, 164);
+    }
+    }
+}
+
+.progressBar{
+    height: 0.35rem;
+    position: relative;
+    width: 7rem;
+    
+    background-color: #e5e9f9;
+    border-radius: 0.25rem;
+}
+.verticleProgress{
+    width: 0.35rem;
+    position: relative;
+    height: 10rem;
+    
+    background-color: #e5e9f9;
+    border-radius: 0.25rem;
+}
+.innerBar{
+    border-radius: 0.25rem;
+    overflow: hidden;
+    height: 0.34rem;
+}
+.vinnerBar{
+    border-radius: 0.25rem;
+    overflow: hidden;
+    width: 0.34rem;
+}
+.id1{
+    background-color: #ff808b;
+}
+.id2{
+    background-color: #4d4cac;
+}
+.id3{
+    background-color: #5e81f4    ;
+}
+.id4{
+    background-color: #d0a8fa;
+}
+.fontid1{
+    color: #ff808b;
+}
+.fontid2{
+    color: #4d4cac;
+}
+.fontid3{
+    color: #5e81f4    ;
+}
+.fontid4{
+    color: #d0a8fa;
+}
+.myCourses{
+    h3,p{
+        color: #fff;
+        letter-spacing: 1px;
+    }
+}
