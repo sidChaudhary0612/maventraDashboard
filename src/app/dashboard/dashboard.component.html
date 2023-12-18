@@ -30,7 +30,7 @@
                 <div  *ngFor="let data of getData.dashboardData.lastestResults">
                     <div fxLayout="row" fxLayoutAlign="space-between center">
                         <h3>{{this.data.quizTitle}}</h3>
-                        <!-- <progress value="{{this.data.score}}" max="100"></progress> -->
+                        
                         <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
                             <div class="progressBar">
                                 <div class="innerBar" [ngClass]="{'id1': data.quizTitle === 'JavaScript Basics', 'id2': data.quizTitle === 'HTML Fundamentals', 'id3': data.quizTitle === 'CSS Essentials', 'id4': data.quizTitle === 'React Fundamentals'}" [style.width]="this.data.score"></div>
@@ -46,19 +46,7 @@
                 <div style="margin-bottom: 1rem;" fxLayout="row" fxLayoutAlign="space-between">
                     <h2>Time spent on learning</h2>
                     <div fxLayoutAlign="center center" fxLayoutGap="0.5rem"><p>Last week</p> <mat-icon>keyboard_arrow_down</mat-icon></div>              
-                </div>
-                <div >
-                    <!-- <div fxLayout="row">
-                        <h4 *ngFor="let weekDays of weekDays">{{this.weekDays}}</h4>
-                        <h4></h4>
-                    </div> -->
-                    <!-- <div class="verticleProgress">
-                        <div class="vinnerBar" [style.height]="this.data.Vocabulary"></div>
-                        <div class="vinnerBar" [style.height]="this.data.Grammar"></div>
-                        <div class="vinnerBar" [style.height]="this.data.Listening"></div>
-                        <div class="vinnerBar" [style.height]="this.data.Writing"></div>
-                    </div> -->
-                </div>
+                </div>               
                 <app-time-spent-chart></app-time-spent-chart>
             </div>
         </div>
