@@ -1,7 +1,7 @@
 .sideNavContainer{
     width: 13rem;
     height: 100%;
-    
+    position: fixed;
     background: #fff;
 
     img{

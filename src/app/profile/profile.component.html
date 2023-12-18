@@ -5,7 +5,10 @@
     </div>
     <br>
     <div fxLayout="column" fxLayoutAlign="center center" >
-        <img src="./../../assets/profile.png">
+        <div style="position: relative;" fxLayout="column" fxLayoutAlign="center center">
+            <img src="./../../assets/profile.png">
+        <mat-icon style="border-radius: 50%;background-color: #5e81f4;text-align: center;color: #fff;height: 1.3rem;width: 1.3rem;position: absolute; bottom: 1px;right: 1rem;font-size: 1.25rem;">add</mat-icon>
+        </div>
         <h3 >{{this.getData.fullName}}</h3>
         <h4>Student</h4>
     </div>

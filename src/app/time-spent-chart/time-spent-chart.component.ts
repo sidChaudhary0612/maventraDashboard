@@ -75,12 +75,10 @@ export class TimeSpentChartComponent {
         categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],position: "top",
       },
       grid: {
-        show: false, // Set to false to hide the grid lines
+        show: false,
       },
       yaxis: {
-        lines: {
-          show: false
-        },
+        
         axisBorder: {
           show: false
         },
